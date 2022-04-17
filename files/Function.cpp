@@ -4,7 +4,7 @@
 using namespace std;
 
 double pow(double x, int p) 
-{//ñòåïåíü
+{//Ã±Ã²Ã¥Ã¯Ã¥Ã­Ã¼
 	double up = 1;
 	for (int m = p; m > 0; m--) {
 		up = up * x;
@@ -42,13 +42,13 @@ void infile(double x, int i)
 	file << "\n Summ = " << sum;
 }
 void outfile() {
-	const int MAX = 80; // ðàçìåð áóôåðà
-	char buffer[MAX]; // áóôåð ñèìâîëîâ
-	ifstream file("file.txt"); // ñîçäàòü âõîäíîé ôàéë
-	while (!file.eof()) // öèêë äî End Of File
+	const int MAX = 80; // Ã°Ã Ã§Ã¬Ã¥Ã° Ã¡Ã³Ã´Ã¥Ã°Ã 
+	char buffer[MAX]; // Ã¡Ã³Ã´Ã¥Ã° Ã±Ã¨Ã¬Ã¢Ã®Ã«Ã®Ã¢
+	ifstream file("file.txt"); // Ã±Ã®Ã§Ã¤Ã Ã²Ã¼ Ã¢ÃµÃ®Ã¤Ã­Ã®Ã© Ã´Ã Ã©Ã«
+	while (!file.eof()) // Ã¶Ã¨ÃªÃ« Ã¤Ã® End Of File
 	{
-		file.getline(buffer, MAX); // ÷èòàåò ñòðîêó òåêñòà
-		cout << buffer << endl; // è âûâîäèò åå
+		file.getline(buffer, MAX); // Ã·Ã¨Ã²Ã Ã¥Ã² Ã±Ã²Ã°Ã®ÃªÃ³ Ã²Ã¥ÃªÃ±Ã²Ã 
+		cout << buffer << endl; // Ã¨ Ã¢Ã»Ã¢Ã®Ã¤Ã¨Ã² Ã¥Ã¥
 	}
 }
 /*
